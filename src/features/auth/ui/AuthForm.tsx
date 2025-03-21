@@ -52,7 +52,12 @@ const AuthForm = () => {
             </Box>
             <Box display="flex" flexDirection="column" gap={2}>
               <TextField name="username" label="Введите свой логин" required={true} />
-              <TextField name="password" label="Введите свой пароль" type="text" required={true} />
+              <TextField
+                name="password"
+                label="Введите свой пароль"
+                type="password"
+                required={true}
+              />
               <Button variant="contained" type="submit">
                 {isLoading ? <CircularProgress sx={{ color: '#ffffff' }} /> : 'Войти'}
               </Button>
