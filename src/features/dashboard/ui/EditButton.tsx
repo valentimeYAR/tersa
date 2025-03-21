@@ -32,6 +32,7 @@ const EditButton = ({ value, info, isEdit }: Props) => {
     } else {
       handleCreate(values).then(() => onClose());
     }
+    methods.reset();
   };
 
   return (
